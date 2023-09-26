@@ -25,4 +25,4 @@ $(BIN): $(LINKOBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
 %.o: %.cc
-	$(cc) -c $(notdir $(basename $@)).cc $(CXXFLAGS) -o $@
+	$(cc) -c $(notdir $(basename $@)).cc $(CFLAGS) -o $@
